@@ -1,0 +1,4 @@
+echo d1 d2|xargs -n 1
+cut -d ':' -f 1 /etc/passwd | head -n 3 | xargs id
+find ../ -maxdepth 1 -regex .*\.txt|xargs file
+echo d1 d1|xargs -n 1 cp -v s/s1
